@@ -32,7 +32,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  my_new_project:
+  ae_bootcamp:
     # Applies to all files under models/example/
-    example:
-      materialized: view
+    staging:
+      +enabled: true
+      +materialized: view
+      +schema: stg_northwind
+
+    warehouse:
+      +enabled: true
+      +materialized: table
+      +schema: dwh_northwind
+
+    analytics_obt:
+      +enabled: true
+      +materialized: table
+      +schema: analytics_northwind
+

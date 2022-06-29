@@ -1,10 +1,10 @@
 with source as (
 
-    select * from {{ source('northwind', 'customer') }}
+    select * from {{ source('northwind', 'employees') }}
 )
 
 select
-    id
+     id
     ,company
     ,last_name
     ,first_name

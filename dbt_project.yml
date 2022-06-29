@@ -37,15 +37,18 @@ models:
     staging:
       +enabled: true
       +materialized: view
+      location: EU
       +schema: stg_northwind
 
     warehouse:
       +enabled: true
       +materialized: table
+      location: EU
       +schema: dwh_northwind
 
     analytics_obt:
       +enabled: true
       +materialized: table
+      location: EU
       +schema: analytics_northwind
 

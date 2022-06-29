@@ -4,7 +4,7 @@ sources:
       schema: dl_northwind
       tables:
         - name: customer
-        - name: employee_previleges
+        - name: employee_privileges
         - name: employees
         - name: inventory_transaction_types
         - name: inventory_transactions

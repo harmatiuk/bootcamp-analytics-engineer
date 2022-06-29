@@ -14,7 +14,7 @@ sources:
         - name: order_status
         - name: orders
         - name: orders_tax_status
-        - name: pivileges
+        - name: privileges
         - name: products
         - name: purchase_order_details
         - name: purchase_order_status

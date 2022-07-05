@@ -6,6 +6,7 @@ with source as (
 
 
 select
+
     supplier_ids,
     id,
     product_code,
@@ -19,5 +20,7 @@ select
     discontinued,
     minimum_reorder_quantity,
     category,
-    attachments
+    attachments,
+    current_timestamp() as insertion_timestamp
+
 from source

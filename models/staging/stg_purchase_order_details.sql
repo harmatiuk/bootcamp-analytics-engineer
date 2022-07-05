@@ -5,6 +5,7 @@ with source as (
 
 
 select
+
     id,
     purchase_order_id,
     product_id,
@@ -12,5 +13,7 @@ select
     unit_cost,
     date_received,
     posted_to_inventory,
-    inventory_id
+    inventory_id,
+    current_timestamp() as insertion_timestamp
+
 from source

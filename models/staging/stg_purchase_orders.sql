@@ -4,7 +4,8 @@ with source as (
 )
 
 
-select 
+select
+
     id,
     supplier_id,
     created_by,
@@ -20,5 +21,7 @@ select
     notes,
     approved_by,
     approved_date,
-    submitted_by
+    submitted_by,
+    current_timestamp() as insertion_timestamp
+
 from source

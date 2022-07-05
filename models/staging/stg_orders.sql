@@ -5,6 +5,7 @@ with source as (
 )
 
 select
+
     id,
     employee_id,
     customer_id,
@@ -24,5 +25,7 @@ select
     notes,
     tax_rate,
     tax_status_id,
-    status_id
+    status_id,
+    current_timestamp() as insertion_timestamp
+
 from source

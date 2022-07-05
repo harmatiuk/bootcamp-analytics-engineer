@@ -4,6 +4,7 @@ with source as (
 )
 
 select
+
     id,
     company,
     last_name,
@@ -21,5 +22,7 @@ select
     country_region,
     web_page,
     notes,
-    attachments
+    attachments,
+    current_timestamp() as insertion_timestamp
+
 from source

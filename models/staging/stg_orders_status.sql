@@ -4,6 +4,9 @@ with source as (
 )
 
 select
+
     id,
-    status_name
+    status_name,
+    current_timestamp() as insertion_timestamp
+
 from source

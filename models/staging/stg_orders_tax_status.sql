@@ -4,6 +4,9 @@ with source as (
 )
 
 select
+
     id,
     tax_status_name,
+    current_timestamp() as insertion_timestamp
+
 from source

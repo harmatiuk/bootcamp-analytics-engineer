@@ -4,6 +4,9 @@ with source as (
 )
 
 select
+
     string_id,
-    string_data
+    string_data,
+    current_timestamp() as insertion_timestamp
+
 from source

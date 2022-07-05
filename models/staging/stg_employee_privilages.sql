@@ -4,6 +4,9 @@ with source as (
 )
 
 select
+
     employee_id,
-    privilege_id 
+    privilege_id,
+    current_timestamp() as insertion_timestamp
+
 from source

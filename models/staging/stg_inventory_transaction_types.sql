@@ -4,6 +4,9 @@ with source as (
 )
 
 select
+
     id,
-    type_name
+    type_name,
+    current_timestamp() as insertion_timestamp
+
 from source

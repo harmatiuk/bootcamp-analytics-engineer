@@ -6,6 +6,7 @@ with source as (
 select 
 
     id,
-    status
+    status,
+    current_timestamp() as insertion_timestamp
 
 from source

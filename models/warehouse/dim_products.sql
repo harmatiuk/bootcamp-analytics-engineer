@@ -18,8 +18,18 @@ with source as (
         insertion_timestamp
     from {{ ref('stg_products') }}
 
+),
+
+remove_duplicates as (
+
+    select
+        *,
+        row_number() over(partition by product_id) as row_number
+    from source
 )
 
 select
     *
-from source
+    except (row_number),
+from remove_duplicates
+where row_number = 1

@@ -46,7 +46,7 @@ models:
       location: EU
       +schema: dwh_northwind
 
-    analytics_obt:
+    analytics:
       +enabled: true
       +materialized: table
       location: EU

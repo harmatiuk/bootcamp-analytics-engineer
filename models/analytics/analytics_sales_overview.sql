@@ -77,11 +77,11 @@ final as (
         current_timestamp() as insertion_timestamp
     from source_fact_sales sales
     left join source_dim_customer customer
-    on customer.customer_id = sales.customer_id
+        on customer.customer_id = sales.customer_id
     left join source_dim_employee employee
-    on  sales.employee_id = employee.employee_id
+        on  sales.employee_id = employee.employee_id
     left join source_dim_product product
-    on sales.product_id = product.product_id
+        on sales.product_id = product.product_id
 )
 select
 *

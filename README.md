@@ -8,4 +8,4 @@ The Northwind database is a sample database created by Microsoft. The database c
 
 ### Entity-Relationship Diagram (ERD)
 
-![alt tag](https://raw.githubusercontent.com/dalers/mywind/master/northwind-erd.pngg)
+![alt tag](https://raw.githubusercontent.com/dalers/mywind/master/northwind-erd.png)
